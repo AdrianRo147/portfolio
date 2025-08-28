@@ -17,7 +17,7 @@ export default function HeroUI() {
             A computer engineering student from Slovakia with interest in embedded / low-level programming, web development and networking.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button as={ Link } color="primary" variant="shadow" href="/cv.pdf">
+            <Button as={ Link } color="primary" variant="shadow" href="/portfolio/cv.pdf">
               Download CV
             </Button>
             <Button as={ Link } color="primary" variant="bordered" href="#projects">
