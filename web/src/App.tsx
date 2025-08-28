@@ -10,13 +10,13 @@ function App() {
   return (
     <>
       <NavbarUI />
-        <HeroUI />
-        <AboutUI />
-        <SkillsUI />
-        <CertificationsUI />
-        <ProjectsUI />
-        <ContactUI />
-
+      
+      <HeroUI />
+      <AboutUI />
+      <SkillsUI />
+      <CertificationsUI />
+      <ProjectsUI />
+      <ContactUI />
     </>
   )
 }
