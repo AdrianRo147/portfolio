@@ -4,13 +4,13 @@ import { Input, Textarea } from "@heroui/input"
 import { Link } from "@heroui/link";
 import { addToast } from "@heroui/toast";
 import { Linkedin, Mail } from "lucide-react";
-import { type FormEvent, useState } from "react";
+import { type FormEvent} from "react";
 
 export default function ContactUI() {
-  const [submitted, setSubmitted] = useState<boolean>(false);
+  //const [submitted, setSubmitted] = useState<boolean>(false);
 
   const onSubmit = (e: FormEvent<HTMLFormElement>): void => {
-    if (!submitted) return;
+    //if (!submitted) return;
 
     e.preventDefault();
 
@@ -47,14 +47,14 @@ export default function ContactUI() {
                 name="email"
                 placeholder="Enter you E-mail"
                 type="email"
-                validate={(value: string) => {
-                  if (submitted && value.length === 0) {
+                /*validate={(value: string) => {
+                  /*if (submitted && value.length === 0) {
                     return "E-mail is mandatory";
                   }
                   if (submitted && !value.match(new RegExp('^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'))) {
                     return "Invalid E-mail";
                   }
-                }}
+                }}*/
               />
 
               <Input
@@ -65,11 +65,11 @@ export default function ContactUI() {
                 name="subject"
                 placeholder="Enter subject"
                 type="text"
-                validate={(value: string) => {
+                /*validate={(value: string) => {
                   if (submitted && value.length === 0) {
                     return "Subject is mandatory";
                   }
-                }}
+                }}*/
               />
 
               <Textarea
@@ -79,11 +79,11 @@ export default function ContactUI() {
                 labelPlacement="outside"
                 name="message"
                 placeholder="Enter your message"
-                validate={(value: string) => {
+                /*validate={(value: string) => {
                   if (submitted && value.length === 0) {
                     return "Message is mandatory";
                   }
-                }}
+                }}*/
               />
 
               <Button
