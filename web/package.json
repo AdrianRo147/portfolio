@@ -6,6 +6,7 @@
   "description": "",
   "license": "MIT",
   "author": "AdrianRo147",
+  "homepage": "https://adrianro147.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
