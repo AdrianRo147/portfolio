@@ -37,14 +37,6 @@ export default function DatabasesCard({
         >
           Oracle SQL
         </Chip>
-
-        <Chip
-          color="primary"
-          variant="bordered"
-          className={chipClassName}
-        >
-          PostgreSQL
-        </Chip>
       </CardBody>
     </Card>
   )

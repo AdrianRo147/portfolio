@@ -76,14 +76,6 @@ export default function FrameworksLibrariesCard({
           variant="bordered"
           className={chipClassName}
         >
-          Symfony
-        </Chip>
-
-        <Chip
-          color="primary"
-          variant="bordered"
-          className={chipClassName}
-        >
           Spring
         </Chip>
 
