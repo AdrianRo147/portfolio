@@ -35,7 +35,7 @@ export default function ContactUI() {
             Contact
           </h1>
 
-          <div className="w-full flex flex-col lg:flex-row gap-10 lg:gap-30 mt-5">
+          <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 lg:gap-30 mt-5 items-center lg:items-start">
             <Form validationBehavior="aria" onSubmit={onSubmit} className="w-[90vw] lg:w-[30vw]">
               <Input
                 isRequired
@@ -92,9 +92,9 @@ export default function ContactUI() {
               </Button>
             </Form>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col flex-wrap items-center lg:items-start">
               <h4 className="text-2xl font-bold">Other ways of contacting me</h4>
-              <div className="mt-6 flex flex-row gap-5">
+              <div className="mt-6 flex flex-row flex-wrap gap-5">
                 <Link showAnchorIcon href="https://www.linkedin.com/in/adrian-rovnan/"><Linkedin size={24} className="mr-3"/>LinkedIn</Link>
                 <Link showAnchorIcon href="mailto:adrian.rovnan@gmail.com"><Mail className="mr-3" />adrian.rovnan@gmail.com</Link>
               </div>
