@@ -7,7 +7,7 @@ import NetworkingProtocolsCard from "./cards/networking-protocols";
 import ToolsPracticesCard from "./cards/tools-practices";
 import WebTechnologiesCard from "./cards/web-technologies";
 
-const cardClassName = "p-5 mt-5 w-md"
+const cardClassName = "p-5 mt-5 w-[90vw] lg:w-md"
 
 export default function SkillsUI() {
   return (
