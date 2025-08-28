@@ -23,9 +23,7 @@ export default function NavbarUI() {
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skills'},
     { label: 'Certifications', href: '#certifications'},
-    { label: 'Projects', href: '#projects' },
-    /* { label: 'Experience' , href: '#xperience' }, */
-    { label: 'Contact', href: '#contact' }
+    { label: 'Projects', href: '#projects' }
   ];
 
   const activeSection = useActiveSection(menuItems, {
