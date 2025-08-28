@@ -25,7 +25,7 @@ export default function LinuxCertificate() {
           </Chip>
         </div>
 
-        <Button as={ Link } variant="shadow" color="primary" target="_blank" href="linux.pdf">
+        <Button as={ Link } variant="shadow" color="primary" target="_blank" href="/portfolio/linux.pdf">
           Open certificate in new tab
         </Button>
       </div>

@@ -77,7 +77,7 @@ export default function CcnaCertificate() {
           </Chip>
         </div>
 
-        <Button as={ Link } variant="shadow" color="primary" target="_blank" href="ccna.pdf">
+        <Button as={ Link } variant="shadow" color="primary" target="_blank" href="/portfolio/ccna.pdf">
           Open certificate in new tab
         </Button>
       </div>
