@@ -95,7 +95,7 @@ export default function NavbarUI() {
                 color={
                   isActive(item.href) ? 'primary' : 'foreground'
                 }
-                href={`/${item.href}`}
+                href={item.href}
                 size='lg'
                 onClick={() => closeMenu()}
               >
