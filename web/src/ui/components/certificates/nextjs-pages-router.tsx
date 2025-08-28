@@ -11,7 +11,7 @@ export default function NextPagesRouterCertificate() {
         August 2025
       </p>
 
-      <div className="rounded-xl bg-content1 p-5 flex flex-col gap-3 w-[90vw] lg:w-[50vw]">
+      <div className="rounded-xl bg-content1 p-5 flex flex-col gap-3 w-[90vw] lg:w-[40vw]">
         <h3 className="text-3xl font-extrabold leading-tight">
           Next.js Pages Router Fundamentals
         </h3>

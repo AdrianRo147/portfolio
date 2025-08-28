@@ -11,7 +11,7 @@ export default function SkillmeaOOPCertificate() {
         June 2023
       </p>
 
-      <div className="rounded-xl bg-content1 p-5 flex flex-col gap-3 w-[90vw] lg:w-[50vw] h-full">
+      <div className="rounded-xl bg-content1 p-5 flex flex-col gap-3 w-[90vw] lg:w-[40vw] h-full">
         <h3 className="text-3xl font-extrabold leading-tight">Basics of Programming and OOP</h3>
         <h4 className="text-2xl font-extrabold leading-tight">Skillmea</h4>
 
