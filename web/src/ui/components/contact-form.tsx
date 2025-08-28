@@ -7,7 +7,11 @@ import { Linkedin, Mail } from "lucide-react";
 import { type FormEvent, useState } from "react";
 
 export default function ContactUI() {
+  const [submitted, setSubmitted] = useState<boolean>(false);
+
   const onSubmit = (e: FormEvent<HTMLFormElement>): void => {
+    if (!submitted) return;
+
     e.preventDefault();
 
     //const data = Object.fromEntries(new FormData(e.currentTarget));
@@ -25,8 +29,6 @@ export default function ContactUI() {
     });
   };
 
-  const [submitted, setSubmitted] = useState<boolean>(false);
-
   return (
     <section id="contact">
       <div className="relative container mx-auto px-6 lg:px-12 pb-10 flex flex-col lg:flex-row items-center">
@@ -38,6 +40,7 @@ export default function ContactUI() {
           <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 lg:gap-30 mt-5 items-center lg:items-start">
             <Form validationBehavior="aria" onSubmit={onSubmit} className="w-[90vw] lg:w-[30vw]">
               <Input
+                isDisabled
                 isRequired
                 label="E-mail"
                 labelPlacement="outside"
@@ -48,13 +51,14 @@ export default function ContactUI() {
                   if (submitted && value.length === 0) {
                     return "E-mail is mandatory";
                   }
-                  if (submitted && !value.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) {
+                  if (submitted && !value.match(new RegExp('^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'))) {
                     return "Invalid E-mail";
                   }
                 }}
               />
 
               <Input
+                isDisabled
                 isRequired
                 label="Subject"
                 labelPlacement="outside"
@@ -69,6 +73,7 @@ export default function ContactUI() {
               />
 
               <Textarea
+                isDisabled
                 isRequired
                 label="Message"
                 labelPlacement="outside"
@@ -86,10 +91,13 @@ export default function ContactUI() {
                 variant="shadow"
                 color="primary"
                 className="mt-3 w-[90vw] lg:w-fit"
-                onPress={() => setSubmitted(true)}
+                /*onPress={() => setSubmitted(true)}*/
+                isDisabled
               >
                 Submit
               </Button>
+
+              <h4 className="text-xl font-bold mt-5">Contact form isn't configured yet. Please use other ways of contacting me.</h4>
             </Form>
 
             <div className="flex flex-col flex-wrap items-center lg:items-start">
