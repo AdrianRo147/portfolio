@@ -28,10 +28,9 @@ export default function HeroUI() {
 
         <div className="mt-12 lg:mt-0 lg:ml-12 flex justify-center">
           {/*<img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" 
-            alt="Hero Illustration" 
+            alt="Photo" 
             className="w-full max-w-md lg:max-w-xl rounded-2xl shadow-2xl border border-white/20"
           />*/}
-          <p className="w-full max-w-md lg:max-w-xl rounded-2xl shadow-2xl border border-white/20">Photo</p>
         </div>
       </div>
     </section>
