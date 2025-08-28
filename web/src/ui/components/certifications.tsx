@@ -3,6 +3,7 @@ import CcnaCertificate from "./certificates/ccna";
 import ReactCertificate from "./certificates/react";
 import NextAppRouterCertificate from "./certificates/next-app-router.tsx";
 import NextPagesRouterCertificate from "./certificates/nextjs-pages-router.tsx";
+import SkillmeaOOPCertificate from "./certificates/skillmea-oop.tsx";
 
 export default function CertificationsUI() {
   return (
@@ -12,7 +13,8 @@ export default function CertificationsUI() {
             Certifications
           </h1>
 
-          <div className="flex flex-col gap-10 items-start justify-start">
+          <div className="flex flex-col gap-10 items-center lg:items-start justify-start">
+            <SkillmeaOOPCertificate />
             <LinuxCertificate />
             <CcnaCertificate />
             <ReactCertificate />
