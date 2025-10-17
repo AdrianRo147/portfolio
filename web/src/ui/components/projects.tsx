@@ -1,6 +1,7 @@
 import CarStoreManagementProject from "./projects/car-store-management-system";
 import DSAProject from "./projects/dsa";
 import QrCodeGeneratorProject from "./projects/qr-code-generator";
+import WeatherStationProject from "./projects/weather-station";
 
 export default function ProjectsUI() {
   return (
@@ -15,6 +16,7 @@ export default function ProjectsUI() {
             <QrCodeGeneratorProject />
             <CarStoreManagementProject />
             <DSAProject />
+            <WeatherStationProject />
           </div>
 
         </div>
