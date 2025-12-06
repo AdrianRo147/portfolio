@@ -80,13 +80,13 @@ export default function NavbarUI() {
           ))}
         </NavbarContent>
 
-        {/*<NavbarContent justify='end'>
-          <NavbarItem>
+        <NavbarContent justify='end'>
+        {/*<NavbarItem>
             <Button as={ Link } color='primary' variant='shadow' href='#contact'>
               Contact me
             </Button>
-          </NavbarItem>
-        </NavbarContent>*/}
+          </NavbarItem>*/}
+        </NavbarContent>
 
         <NavbarMenu className='dark'>
           {menuItems.map((item: MenuItem, i: number) => (
