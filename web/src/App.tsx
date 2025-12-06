@@ -18,7 +18,7 @@ function App() {
       <EducationUI />
       <CertificationsUI />
       <ProjectsUI />
-      <ContactUI />
+      {/*<ContactUI />*/}
     </>
   )
 }
