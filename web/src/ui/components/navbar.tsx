@@ -12,6 +12,7 @@ import { useState } from 'react';
 import { type MenuItem } from '../../libs/definitions';
 import { useActiveSection } from '../../hooks/use-active-section';
 import { closeMenu } from '../../libs/utils';
+import { Github, Linkedin } from "lucide-react";
 
 export default function NavbarUI() {
   const [isMenuOpen, setIsMenuOpen]: [
@@ -81,6 +82,14 @@ export default function NavbarUI() {
         </NavbarContent>
 
         <NavbarContent justify='end'>
+	  <div className="flex flex-row gap-5">
+	    <Link color="foreground" href="https://github.com/AdrianRo147">
+	      <Github size={20} />
+	    </Link>
+	    <Link color="foreground" href="https://linkedin.com/adrian-rovnan">
+	      <Linkedin size={20} />
+	    </Link>
+	  </div>
         {/*<NavbarItem>
             <Button as={ Link } color='primary' variant='shadow' href='#contact'>
               Contact me
