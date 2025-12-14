@@ -10,11 +10,7 @@ export default function WeatherStationProject() {
       </h4>
       <span className="text-gray-400">10th July 2025 - 17th October 2025</span>
       <p className="text-lg text-gray-300 text-justify">
-         In this project I made a simple command-line based management system made in C with POSIX signal handling and simple file-based database. This project offers
-        various features such as CRUD operations of content of management system, simple file-based database format with predefined attributes and syntax which is parsed
-        during runtime, make build system and so on. During working on this project I learned about heap allocation, pointer arithmetrics, finding and solving
-        memory leaks using valgrind, basic data structure (since C doesn't offer any, unlike C++), algorithm for parsing my database format and POSIX signals
-        since I needed to save database into file on application close.
+      	Simple Raspberry Pi Pico W Weather Station microcontroller programmed in MicroPython and dashboard app made in React.js (frontend) and Express.js (backend). While making this project, I learned about making UIs in React, making REST API with ORM and JWT for authentication. Microcontroller connects to Wi-Fi, periodically sends data to API, which can be browsed and managed.
      </p>
       <Button as={ Link } variant="flat" color="primary" href="https://github.com/AdrianRo147/weather-station"><GitGraph />Source Code</Button>
     </div>
